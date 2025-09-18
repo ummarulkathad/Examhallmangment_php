@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 170vh;
+    background-image: linear-gradient(rgba(92, 137, 156, 0.75),rgba(100, 148, 61, 0.75)),url(images/sdm.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: black;
+}
+.content h1
+{
+    font-family: 'URW Chancery L', 'cursive';
+    font-size: 60px;
+    line-height: 140px;
+    margin-top: 60px;
+}
+.content h2
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    line-height: 100px;
+    margin-top: 30px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color:rgb(1, 12, 12);
+
+}
+.links{
+    margin-top: 30px;
+}
+.links a{
+    color: rgb(216, 231, 232);
+    text-decoration: none;
+    display: inline-block
+}
+.btn{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #87874f;
+    background: transparent;
+    color: rgb(8, 233, 249);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.slide-left{
+    animation: slideleft 1s linear forwards;
+}
+.slide-center{
+    animation: slidecenter 1s linear forwards;
+}
+@keyframes slideleft{
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+        
+    }
+}
+p.slide-left{
+    animation-delay: 1s;
+
+}
+.links.slide-left{
+    animation-delay: 2s;
+}
+span{
+    background: #1d1f18;
+    height: 100%;
+    width: 0;
+    border-radius: 40px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index:-1;
+    transition: 0.5s;
+
+}
+.btn:hover span{
+    width: 200px;
+    
+    text-align: center;
+}
+.btn:hover span{
+    border: none;
+}
