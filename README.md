@@ -44,7 +44,7 @@ Tools: XAMPP / WAMP, Git
 
 Clone the repository
 
-git clone https://github.com/your-username/exam-management-system.git
+git clone https://github.com/ummarulkathad/Examhallmangment_php
 
 
 Setup Database
